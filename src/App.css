@@ -1,0 +1,242 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Adjust the spacing for larger screens */
+@media (min-width: 1200px) {
+  nav a {
+    margin-right: 1.5rem;
+    /* Adjust the spacing between links as needed */
+  }
+}
+
+/* Optional: Adjust styles for better visibility on narrow screens */
+@media (max-width: 768px) {
+  nav {
+    background-color: #f8f8f8;
+  }
+}
+
+footer {
+  background-color: white;
+  color: #333;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #ddd;
+  /* Add a border at the top */
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+}
+
+/* Optional: Add some styling to the text */
+footer p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+  /* Remove default margin */
+}
+
+/* Optional: Add some hover effect */
+footer:hover {
+  background-color: #f0f0f0;
+  /* Lighten the background color on hover */
+}
+
+/* App.css */
+
+#home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 80px;
+  /* Gap between columns */
+}
+
+h1 {
+  color: white;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.carouselImg {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.formCard {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  max-width: 300px;
+  background-color: #1a1a1a;
+}
+
+.formCard:hover {
+  border-color: #fff;
+  background-color: #111111;
+}
+
+.formCard h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formCard hr {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 20px 0;
+}
+
+.formCard Button {
+  margin-top: 20px;
+}
+
+.MuiAlert-standardSuccess {
+  margin-top: 20px;
+  background-color: rgba(76, 175, 80, 0.5);
+  color: #fff;
+}
+
+#cities-container {
+  display: flex;
+}
+
+#form-container {
+  margin-right: 50px;
+}
+
+#city-title {
+  color: white;
+}
+
+#form-card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  max-width: 300px;
+  background-color: #1a1a1a;
+}
+
+#form-card:hover {
+  border-color: #fff;
+  background-color: #111111;
+}
+
+#select-city-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#form-divider {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 20px 0;
+}
+
+#continue-button {
+  margin-top: 20px;
+}
+
+.MuiAlert-standardSuccess {
+  margin-top: 20px;
+  background-color: rgba(76, 175, 80, 0.5);
+  color: #fff;
+}
+
+.info-card-row {
+  /* margin-bottom: 20%; */
+  /* margin-top: 5%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.info-card-row > * {
+  flex: 1 1 calc(25% - 20px); /* Adjust width of each card */
+  margin-right: 20px; /* Adjust spacing between cards */
+}
+
+.info-card-row > *:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+.favorite-restaurants-container {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  background-color: #1a1a1a;
+  margin: 20px auto;
+  color: white;
+  overflow: hidden; /* Prevent text overflow */
+  word-wrap: break-word; /* Wrap long words */
+}
+
+.favorite-restaurants-container:hover {
+  border-color: #fff;
+  background-color: #111111;
+}
+
+.favorite-restaurants-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorite-restaurant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.restaurant-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
